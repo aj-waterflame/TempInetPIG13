@@ -11,7 +11,9 @@ let buffIntram = Array.from(Array(30), () => new Array(99999));
 let buffHram = Array.from(Array(30), () => new Array(99999));
 let hStatus = Array(30);
 let flagdata = Array(30);
-let  serialConfig={port : "COM4",baudRate : 9600}  
+const port =["COM4","ttyUSB0"]
+
+let  serialConfig={port : port[1],baudRate : 9600}  
 
 
 function mb_addressArange(ar) {
